@@ -1,0 +1,85 @@
+.navbar-container {
+    /* position: absolute; */
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+}
+
+/* .navbar-container {
+    padding: 1rem;
+    background-color: #0d1117;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+  }
+   */
+  .hamburger {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #112d57;
+    cursor: pointer;
+    user-select: none;
+    margin: 10px;
+  }
+  
+  /* Sliding panel */
+  .side-panel {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(39.97deg, #03d6f3 .79%, #458ff6 79.79%);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: left 0.3s ease;
+    z-index: 1002;
+  }
+  
+  .side-panel.open {
+    left: 0;
+  }
+
+  .close-btn {
+    align-self: flex-end;
+    cursor: pointer;
+    color: white;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.2s;
+    border-bottom: 3px solid #ffffff00;
+  }
+  
+  .nav-links a:hover {
+    border-bottom: 3px solid #fff;
+    transition: all 0.4s ease;
+  }
+  
+  /* Optional overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+  }
+  

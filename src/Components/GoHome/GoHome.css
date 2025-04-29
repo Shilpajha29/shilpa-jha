@@ -1,0 +1,18 @@
+.go-home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background: linear-gradient(39.97deg, #03d6f3 .79%, #458ff6 79.79%);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #fff;
+}
