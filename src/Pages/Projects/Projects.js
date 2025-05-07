@@ -1,6 +1,8 @@
 import React from 'react';
 import './Projects.css';
 import ProjectCard from '../../Components/ProjectCard/ProjectCard';
+import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
 
 export default function Projects() {
   const projectList = [
@@ -30,11 +32,11 @@ export default function Projects() {
   ];
 
   return (
-    <div className="projects-page">
-        <div className='projects-header'>
-            <h1>My Projects</h1>
-            <p>Here are some of the projects I have worked on:</p>
-        </div>
+    <div className="section-container">
+        <Header
+        heading="My Projects."
+        subHeading="Here are a few cool things I've worked on, do check them out!">
+      </Header>
         <div className="projects-list">
             {projectList.map((project, index) => (
                 <ProjectCard
@@ -47,6 +49,12 @@ export default function Projects() {
                 />
             ))}
         </div>
+        <Footer
+        phrase="Check out "
+        link="my skills!"
+        toAddress="/skills">
+      </Footer>
+
     </div>
   );
 }

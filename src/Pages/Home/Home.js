@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import MaleDeveloper from '../../Assests/MaleDeveloper.gif';
+import MaleDeveloper from '../../Assets/MaleDeveloper.gif';
 
 export default function Home() {
   return (

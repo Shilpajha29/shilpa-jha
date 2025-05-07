@@ -3,6 +3,8 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import GoHome from './Components/GoHome/GoHome';
 import Navbar from './Components/Navbar/Navbar';
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import Projects from './Pages/Projects/Projects';
@@ -15,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
@@ -25,6 +28,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <GoHome />
+      <Footer/>
     </div>
   );
 }
